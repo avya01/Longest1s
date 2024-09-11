@@ -1,0 +1,10 @@
+num = int(input("Enter a number: "))
+
+def Count1s(num):
+    count = 0
+    while(num != 0):
+        num = num & (num-1)
+        count+=1
+    return count
+
+print("There are",Count1s(num),"ones in the number",num)
